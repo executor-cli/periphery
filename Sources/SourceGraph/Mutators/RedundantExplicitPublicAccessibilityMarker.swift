@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import Shared
 
 final class RedundantExplicitPublicAccessibilityMarker: SourceGraphMutator {

@@ -1,5 +1,5 @@
 #if os(macOS)
-    import Configuration
+    import PeripheryConfiguration
     @testable import TestShared
     import XCTest
 

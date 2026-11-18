@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 @testable import PeripheryKit
 import SystemPackage
 import XCTest

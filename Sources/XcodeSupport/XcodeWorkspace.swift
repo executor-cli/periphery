@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import Foundation
 import Logger
 import Shared
@@ -62,6 +62,9 @@ public final class XcodeWorkspace: XcodeProjectlike {
                 }
             case let .group(group):
                 paths += collectProjectPaths(in: group.children, groups: groups + [group])
+            case .fileSystemSynchronizedGroup:
+                // Synchronized folders hold source files, never a nested .xcodeproj.
+                break
             }
         }
 

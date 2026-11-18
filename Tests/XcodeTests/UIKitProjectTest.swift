@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 @testable import TestShared
 
 final class UIKitProjectTest: XcodeSourceGraphTestCase {

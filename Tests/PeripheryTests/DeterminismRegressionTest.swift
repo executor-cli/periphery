@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import Logger
 import Shared
 @testable import SourceGraph

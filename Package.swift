@@ -37,7 +37,7 @@ var targets: [PackageDescription.Target] = [
         name: "Frontend",
         dependencies: [
             .target(name: "Shared"),
-            .target(name: "Configuration"),
+            .target(name: "PeripheryConfiguration"),
             .target(name: "SourceGraph"),
             .target(name: "PeripheryKit"),
             .target(name: "ProjectDrivers"),
@@ -46,7 +46,7 @@ var targets: [PackageDescription.Target] = [
         ]
     ),
     .target(
-        name: "Configuration",
+        name: "PeripheryConfiguration",
         dependencies: [
             .target(name: "Extensions"),
             .target(name: "Shared"),
@@ -103,7 +103,7 @@ var targets: [PackageDescription.Target] = [
     .target(
         name: "SourceGraph",
         dependencies: [
-            .target(name: "Configuration"),
+            .target(name: "PeripheryConfiguration"),
             .product(name: "SwiftSyntax", package: "swift-syntax"),
             .product(name: "SystemPackage", package: "swift-system"),
             .target(name: "Shared"),
@@ -123,7 +123,7 @@ var targets: [PackageDescription.Target] = [
         dependencies: [
             .target(name: "PeripheryKit"),
             .target(name: "ProjectDrivers"),
-            .target(name: "Configuration"),
+            .target(name: "PeripheryConfiguration"),
         ],
         path: "Tests/Shared"
     ),
@@ -147,7 +147,7 @@ var targets: [PackageDescription.Target] = [
         dependencies: [
             .target(name: "TestShared"),
             .target(name: "PeripheryKit"),
-            .target(name: "Configuration"),
+            .target(name: "PeripheryConfiguration"),
         ],
         exclude: ["AccessibilityProject"]
     ),
@@ -183,7 +183,7 @@ let package = Package(
         .executable(name: "periphery", targets: ["Frontend"]),
         .library(
             name: "PeripheryKit",
-            targets: ["PeripheryKit", "ProjectDrivers", "Configuration", "SourceGraph", "Indexer", "Shared", "Logger"]
+            targets: ["PeripheryKit", "ProjectDrivers", "PeripheryConfiguration", "SourceGraph", "Indexer", "Shared", "Logger"]
         ),
     ],
     dependencies: dependencies,

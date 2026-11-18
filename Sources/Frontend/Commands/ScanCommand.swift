@@ -1,5 +1,5 @@
 import ArgumentParser
-import Configuration
+import PeripheryConfiguration
 import Foundation
 import Logger
 import PeripheryKit

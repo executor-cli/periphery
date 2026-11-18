@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import Logger
 
 public extension Logger {

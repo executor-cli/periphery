@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 @testable import Indexer
 import Logger
 @testable import PeripheryKit

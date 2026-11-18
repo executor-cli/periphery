@@ -1,5 +1,5 @@
 #if os(macOS)
-    import Configuration
+    import PeripheryConfiguration
     import Foundation
     import Indexer
     import Logger

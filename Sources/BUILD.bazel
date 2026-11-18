@@ -99,7 +99,7 @@ swift_library(
     ],
     module_name = "SourceGraph",
     deps = [
-        "//Sources:Configuration",
+        "//Sources:PeripheryConfiguration",
         "//Sources:Shared",
         "@swift-syntax//:SwiftSyntax",
         "@swift-system//:SystemPackage",
@@ -241,7 +241,7 @@ swift_binary(
     module_name = "Frontend",
     visibility = ["@@+generated+periphery_generated//:__pkg__"],
     deps = [
-        "//Sources:Configuration",
+        "//Sources:PeripheryConfiguration",
         "//Sources:PeripheryKit",
         "//Sources:ProjectDrivers",
         "//Sources:Shared",
@@ -281,13 +281,13 @@ swift_library(
 )
 
 swift_library(
-    name = "Configuration",
+    name = "PeripheryConfiguration",
     srcs = [
-        "Configuration/ColorOption.swift",
-        "Configuration/Configuration.swift",
-        "Configuration/OutputFormat.swift",
+        "PeripheryConfiguration/ColorOption.swift",
+        "PeripheryConfiguration/Configuration.swift",
+        "PeripheryConfiguration/OutputFormat.swift",
     ],
-    module_name = "Configuration",
+    module_name = "PeripheryConfiguration",
     deps = [
         "//Sources:Extensions",
         "//Sources:Logger",

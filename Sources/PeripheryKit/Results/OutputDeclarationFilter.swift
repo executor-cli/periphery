@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import FilenameMatcher
 import Foundation
 import Logger

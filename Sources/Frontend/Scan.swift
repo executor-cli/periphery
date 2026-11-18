@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import Foundation
 import Indexer
 import Logger

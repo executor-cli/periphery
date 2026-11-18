@@ -1,4 +1,4 @@
-import Configuration
+import PeripheryConfiguration
 import SystemPackage
 @testable import TestShared
 
